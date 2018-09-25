@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demo Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Demo Form</h1>
+    <form action="#" th:action="@{/demo}" th:object="${verificationInfo}" method="post">
+    	<p>NAME: <input type="text" th:field="*{name}" name="name"/></p>
+        <p>SURNAME: <input type="text" th:field="*{surname}" name="surname" /></p>
+        <p>YEAR OF BIRTH: <input type="text" th:field="*{yearOfBirth}" name="yearOfBirth"/></p>
+        <p>TC: <input type="text" th:field="*{tc}" name="tc"/></p>
+        <p><input type="submit" value="Verify" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>

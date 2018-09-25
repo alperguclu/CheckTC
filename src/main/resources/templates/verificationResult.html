@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demo Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Verification Result</h1>
+    <p th:text="'NAME: ' + ${verificationInfo.name}" />
+    <p th:text="'SURNAME: ' + ${verificationInfo.surname}" />
+    <p th:text="'YEAROFBIRTH: ' + ${verificationInfo.yearOfBirth}" />
+    <p th:text="'TC: ' + ${verificationInfo.tc}" />
+    <p th:text="'RESULT: ' + ${verificationInfo.result}" />
+    <a href="/demo">Verify another</a>
+</body>
+</html>
